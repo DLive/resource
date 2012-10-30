@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestWordPrint - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/TestWordPrint.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\C++project\打印系统\TestWordPrint\TestWordPrint\msword.cpp"
+"F:\C++project\打印系统\TestWordPrint\TestWordPrint\TestWordPrint.cpp"
+"F:\C++project\打印系统\TestWordPrint\TestWordPrint\TestWordPrintDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/TestWordPrint.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\C++project\打印系统\TestWordPrint\TestWordPrint\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12B.tmp" 
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+msword.cpp
+TestWordPrint.cpp
+TestWordPrintDlg.cpp
+Generating Code...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TestWordPrint.pdb" /debug /machine:I386 /out:"Debug/TestWordPrint.exe" /pdbtype:sept 
+".\Debug\msword.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TestWordPrint.obj"
+".\Debug\TestWordPrintDlg.obj"
+".\Debug\TestWordPrint.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12C.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/TestWordPrint.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\msword.sbr" ".\Debug\TestWordPrint.sbr" ".\Debug\TestWordPrintDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TestWordPrint.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

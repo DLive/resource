@@ -1,0 +1,46 @@
+// ieextension.idl : ieextension 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(ieextension.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(71B47AE4-9577-44D0-A97B-E307DE6352BF),
+	dual,
+	nonextensible,
+	helpstring("Idlext 接口"),
+	pointer_default(unique)
+]
+interface Idlext : IDispatch{
+};
+[
+	uuid(3816CF9A-2607-4613-B78B-CEE69799E5D2),
+	version(1.0),
+	helpstring("ieextension 1.0 类型库")
+]
+library ieextensionLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(3D26EA5C-A518-4B38-A02E-E4DA83E33262),
+		helpstring("_IdlextEvents 接口")
+	]
+	dispinterface _IdlextEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(2742B128-BC1B-4254-BBBB-7E19FFB0F44B),
+		helpstring("dlext Class")
+	]
+	coclass dlext
+	{
+		[default] interface Idlext;
+		[default, source] dispinterface _IdlextEvents;
+	};
+};

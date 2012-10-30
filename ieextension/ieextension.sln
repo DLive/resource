@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ieextension", "ieextension.vcproj", "{446B1FF5-5B8D-4092-9966-20C9FFE4C8E7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ieextensionPS", "ieextensionPS.vcproj", "{4CDC2E44-B310-4942-BC42-5823165D7C96}"
+	ProjectSection(ProjectDependencies) = postProject
+		{446B1FF5-5B8D-4092-9966-20C9FFE4C8E7} = {446B1FF5-5B8D-4092-9966-20C9FFE4C8E7}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{446B1FF5-5B8D-4092-9966-20C9FFE4C8E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{446B1FF5-5B8D-4092-9966-20C9FFE4C8E7}.Debug|Win32.Build.0 = Debug|Win32
+		{446B1FF5-5B8D-4092-9966-20C9FFE4C8E7}.Release|Win32.ActiveCfg = Release|Win32
+		{446B1FF5-5B8D-4092-9966-20C9FFE4C8E7}.Release|Win32.Build.0 = Release|Win32
+		{4CDC2E44-B310-4942-BC42-5823165D7C96}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4CDC2E44-B310-4942-BC42-5823165D7C96}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

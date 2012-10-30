@@ -1,0 +1,49 @@
+HKCR
+{
+	ieextension.dlext.1 = s 'dlext Class'
+	{
+		CLSID = s '{2742B128-BC1B-4254-BBBB-7E19FFB0F44B}'
+	}
+	ieextension.dlext = s 'dlext Class'
+	{
+		CLSID = s '{2742B128-BC1B-4254-BBBB-7E19FFB0F44B}'
+		CurVer = s 'ieextension.dlext.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {2742B128-BC1B-4254-BBBB-7E19FFB0F44B} = s 'dlext Class'
+		{
+			ProgID = s 'ieextension.dlext.1'
+			VersionIndependentProgID = s 'ieextension.dlext'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{3816CF9A-2607-4613-B78B-CEE69799E5D2}'
+		}
+	}
+}
+
+HKLM
+{
+	SOFTWARE
+	{
+		Microsoft
+		{
+			Windows
+			{
+				CurrentVersion
+				{
+					Explorer
+					{
+						'Browser Helper Objects'
+						{
+							ForceRemove {2742B128-BC1B-4254-BBBB-7E19FFB0F44B}
+						}
+					}
+				}
+			}
+		}
+	}
+}
